@@ -1,0 +1,161 @@
+/* adersoncc */
+/* ----------atributos globais---------- */
+:root{
+    --dark-blue: rgb(2, 2, 56);
+    --black: rgb(0, 0, 0);
+    --dark-red: rgb(214, 8, 8);
+    --dark-green:rgb(2, 92, 2);
+    --heard-green:#2d4a22;
+    --background--white:rgb(238, 231, 231);
+    --white:#fff;
+    --cinza:rgb(134, 129, 129);
+    --light--green:rgb(9, 114, 0);
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    /* OBS: Para celular  - margin e widht*/
+    /* margin: auto;
+    width:500px; */
+    background:var( --background--white);
+    font-family: "poppins",sans-serif;
+}
+
+h2 {
+    margin-top: 2rem;
+    margin-bottom: 0.8rem;
+    font-weight: normal;
+}
+
+/* ---------- header---------- */
+
+header {
+    background-color:var(--heard-green);
+    padding: 2rem 0 10rem;
+    text-align: center;
+}
+
+#logo {
+    color: var(--white);
+    font-weight: 100;
+    /* position: fixed;
+    width: 100%; */
+}
+
+/* ----------main---------- */
+
+.container {
+    width: min(90vw, 800px);
+    margin: auto;
+}
+
+#balance {
+    margin-top: -7rem;
+}
+
+#balance h2 {
+    margin-top: 0.8rem;
+    color: var(--white);
+}
+
+.card {
+    background-color:var(--white);
+    padding: 1rem 2rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    color: var(--dark-blue)
+}
+
+.cardh3 {
+    font-weight: normal;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: var(--black)
+}
+
+.card p{ 
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 2rem; 
+}
+
+.card.total {
+    background: var(--light--green);
+    color:var(--white);
+}
+
+.total.card h3{
+    color:var(--white);
+}
+
+
+/* ----------table---------- */
+
+#table-date {
+    width: 100%;    
+    border-spacing: 0 0.5rem;
+    color: var(--cinza);
+    text-align: left;
+}
+
+table thead th:first-child,
+table tbody td:first-child{
+    border-radius: 0.5rem 0 0 0.5rem;
+}
+table thead th:last-child,
+table tbody td:last-child{
+    border-radius: 0 0.5rem 0.5rem 0;
+}
+
+table th {
+    background-color: #fff;
+    font-weight:normal ;
+    padding: 1rem;
+}
+
+table td {
+    background-color: #fff;
+    font-weight: normal;
+    padding: 1rem;
+}
+
+table tbody tr{
+    opacity: 0.8;
+}
+
+table tbody tr:hover{
+    opacity: 5;
+}
+
+/* ----colors transactions---- */
+
+td.description {
+    color: var(--dark-blue);
+}
+
+td.valuexit{
+    color: var(--dark-red);
+}
+
+td.value {
+    color: var(--dark-green);
+}
+
+td.date {
+    color:var(--black)
+}
+
+/* ----------footer---------- */
+
+.endpage {
+    text-align:center;
+    width: 100%;
+    padding: 1rem;
+    margin-top: 5rem;
+    opacity: 0.5;    
+}
+
